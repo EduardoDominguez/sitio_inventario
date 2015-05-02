@@ -14,7 +14,7 @@
 <body>
     <div class="fondo"></div>
    <div class="formulario">
-		<h2>Bienvenido</h2>
+        <div id="logo"></div>
         <div class="logos">
           <form action="validar.php" method="POST" > 
 			<div class="logo1"></div><input type="text" name="user" required="required" placeHolder="Usuario"><br/>
