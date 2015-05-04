@@ -60,6 +60,7 @@ padding-bottom: 10px;
 .formulario input{
 width: 180px; 
 height: 25px; 
+font-size: 10pt;
 padding: 5px 20px 0px 20px; 
 margin: 0 0 20px 0;
 border-radius: 5px; 
@@ -69,8 +70,8 @@ border-radius: 5px;
 }
 
 .boton{
-padding-bottom: 40px; 
-height: 30px;
+background-color: floralwhite;
+color: gray;
 }
 .boton:active{
 background-color:  darkseagreen;
@@ -91,12 +92,24 @@ list-style: none;
 float: right;
 }
 
- a, li{
+a, li{
 color: white;
 float: right;
 display: inline-block;
 padding-right: 20px;
 text-decoration: none;
+}
+
+a:hover{
+color: floralwhite;
+}
+
+h1{
+padding-right: 40px;
+font-size: 10pt;
+margin-left: 80%;
+float: right;
+display: inline-block;
 }
 
 .header{

@@ -1,12 +1,12 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
-$con=mysqli_connect('localhost','root','','sport')or die ('Ha fallado la conexión: '.mysql_error());
+$con=mysqli_connect('localhost','root','','inventario')or die ('Ha fallado la conexión: '.mysql_error());
 $usuario = $_POST["user"];   
 $password = $_POST["pass"];
-$result = mysqli_query($con,"SELECT * FROM login WHERE user = '$usuario'");
+$result = mysqli_query($con,"SELECT * FROM usuario WHERE aliasusuario = '$usuario'");
 if($row = mysqli_fetch_array($result))
 {     
- if($row["password"] == $password)
+ if($row["contrasenausuario"] == $password)
  {
  
   session_start();  
